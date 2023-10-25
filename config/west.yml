@@ -1,11 +1,13 @@
 manifest:
   remotes:
+    - name: germain-gadel
+      url-base: https://github.com/bullwinkle3000
     - name: zmkfirmware
-      url-base: https://github.com/victorlucachi
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: pmw3610-aml
+      revision: main
       import: app/west.yml
   self:
     path: config
