@@ -8,7 +8,7 @@
 
 &kscan0 {
     col-gpios
-			= <&expander_right 0 (GPIO_ACTIVE_HIGH)>
+			= <&xiao_d 4 (GPIO_ACTIVE_HIGH)>
 			, <&expander_right 1 (GPIO_ACTIVE_HIGH)>
             , <&expander_right 2 (GPIO_ACTIVE_HIGH)>
             , <&expander_right 3 (GPIO_ACTIVE_HIGH)>
