@@ -45,7 +45,7 @@
 &trans     &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG   &bootloader  &trans                 &trans     &kp MINUS   &kp KP_PLUS &kp LBRC &kp RBRC  &kp PIPE    &trans
 &trans    &trans             &trans             &trans              &trans       &trans   &trans       &trans      &trans      &trans      &trans   &trans    &trans      &trans
 &trans    &trans             &trans             &trans              &trans       &trans   &trans       &trans      &trans      &trans      &trans   &trans    &trans      &trans
-&&bootloader &trans          &trans           &trans                &trans       &trans   &trans       &trans      &trans      &trans      &trans   &trans    &trans   &bootloader
+&bootloader &trans           &trans           &trans                &trans       &trans   &trans       &trans      &trans      &trans      &trans   &trans    &trans   &bootloader
                                                 &trans              &trans       &trans   &trans       &trans      &trans      &trans      &trans
 			>;
 		};
