@@ -3,18 +3,17 @@
 #include "wyld_dm.dtsi"
 
 &default_transform {
-    col-offset = <7>;
+    col-offset = <6>;
 };
 
 &kscan0 {
     col-gpios
-			= <&expander 0 (GPIO_ACTIVE_HIGH)>
-			, <&expander 1 (GPIO_ACTIVE_HIGH)>
-            , <&expander 2 (GPIO_ACTIVE_HIGH)>
-            , <&expander 3 (GPIO_ACTIVE_HIGH)>
-            , <&expander 4 (GPIO_ACTIVE_HIGH)>
-            , <&expander 5 (GPIO_ACTIVE_HIGH)>
-            , <&expander 6 (GPIO_ACTIVE_HIGH)>
+			= <&pro_micro 1 (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
+			, <&pro_micro 0  (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
+			, <&pro_micro 2  (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
+			, <&pro_micro 3  (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
+			, <&pro_micro 4  (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
+            , <&pro_micro 5  (GPIO_PULL_DOWN | GPIO_ACTIVE_HIGH)>
 			;
 };
 
