@@ -3,6 +3,9 @@ id: wyld_dm
 Name: wyld_dm
 type: shield
 url: https://github.com/bullwinkle3000/zmk-config-xiao/
-requires: [seeed_xiao]
+requires: [pro_micro]
+exposes: [i2c_oled]
 features:
   - keys
+  - display
+  - underglow
