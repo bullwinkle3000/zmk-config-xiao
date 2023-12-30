@@ -15,6 +15,7 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
+			display-name = "QWERTY";
 
 			bindings = <
 &kp ESC   &kp F1    &kp F2 &kp F3 &kp F4   &kp F5                    &kp F6 &kp F7 &kp F8   &kp F9    &kp F10 &kp F11  &kp F12  
@@ -25,9 +26,12 @@
 &kp LCTRL &kp LGUI &kp LBKT &kp RBKT     &mo 1 &kp SPACE     &kp ENTER  &mo 2      &kp EQUAL &kp RGUI  &kp RALT &kp RCTRL  
                         &kp TAB &kp HOME &kp BSPC  &kp DEL   &kp PG_DN  &kp LALT &kp PG_UP &kp LCTRL
 			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 
 		lower_layer {
+			display-name = "LOWER";
 
 			bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &out OUT_BLE &out OUT_USB  &trans  &trans  &trans  &trans  
@@ -38,9 +42,12 @@
 &bootloader        &trans             &trans              &trans       &trans   &trans   &trans     &trans        &trans     &trans    &trans   &bootloader
                                       &trans              &trans       &trans   &trans   &kp K_VOL_DN  &kp K_MUTE  &kp K_VOL_UP  &trans
 			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 
 		raise_layer {
+			display-name = "RAISE";
 
 			bindings = <
 &trans    &trans &trans &trans   &trans   &trans                     &trans &trans   &trans    &trans  &trans &trans     
@@ -51,6 +58,8 @@
 &trans    &trans &trans &trans   &trans   &trans                     &trans    &kp KP_N0  &kp KP_DOT &kp KP_EQUAL &kp KP_PLUS   &trans    
                         &trans &trans   &trans   &trans         &trans &trans     &trans    &trans
 			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 	};
 };

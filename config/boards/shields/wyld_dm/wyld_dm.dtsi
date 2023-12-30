@@ -49,8 +49,8 @@ RC(5,0) RC(5,1) RC(5,2) RC(5,3)      RC(5,4) RC(5,5)      RC(5,6) RC(5,7)     RC
     left_encoder: encoder_left {
 		compatible = "alps,ec11";
 		label = "LEFT_ENCODER";
-		a-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		a-gpios = <&pro_micro_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&pro_micro_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		steps = <60>;
 		status = "disabled";
 	};
@@ -58,9 +58,9 @@ RC(5,0) RC(5,1) RC(5,2) RC(5,3)      RC(5,4) RC(5,5)      RC(5,6) RC(5,7)     RC
 	right_encoder: encoder_right {
 		compatible = "alps,ec11";
 		label = "RIGHT_ENCODER";
-		a-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		steps = <59>;
+		a-gpios = <&pro_micro_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&pro_micro_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		steps = <60>;
 		status = "disabled";
 	};
 };
