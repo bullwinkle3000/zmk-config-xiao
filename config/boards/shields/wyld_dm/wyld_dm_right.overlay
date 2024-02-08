@@ -2,6 +2,12 @@
 
 #include "wyld_dm.dtsi"
 
+/ {
+    chosen {
+        zephyr,display = &oled;
+    };
+};
+
 &default_transform {
     col-offset = <7>;
 };
