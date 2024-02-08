@@ -4,6 +4,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zephyr,display = &oled;
     };
 
     default_transform: keymap_transform_0 {
@@ -46,19 +47,3 @@ RC(5,0) RC(5,1) RC(5,2) RC(5,3) RC(5,4)   RC(5,5) RC(5,6)        RC(5,7) RC(5,8)
     };
 };
 
-&xiao_i2c {
-	// pinctrl-0 = <&i2c2_scl_pb10 &i2c2_sda_pb11>;
-	// pinctrl-names = "default";
-	status = "okay";
-	// clock-frequency = <I2C_BITRATE_FAST>;
-
-	expander: mcp23017@20 {
-	    compatible = "microchip,mcp230xx";
-        status = "okay";
-        gpio-controller;
-        reg = <0x20>;
-		label = "MCP23017";
-        #gpio-cells = <2>;
-        ngpios = <16>;
-    };
-};
