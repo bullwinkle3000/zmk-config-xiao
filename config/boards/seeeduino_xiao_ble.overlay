@@ -19,9 +19,9 @@
 &xiao_spi {
   status = "okay";
 
-  cs-gpios = <&xiao_d 2 GPIO_ACTIVE_LOW
-    &xiao_d 1 GPIO_ACTIVE_LOW
-    &xiao_d 0 GPIO_ACTIVE_HIGH>;
+  cs-gpios = <&xiao_d 2 GPIO_ACTIVE_LOW>;
+//    &xiao_d 1 GPIO_ACTIVE_LOW
+//    &xiao_d 0 GPIO_ACTIVE_HIGH>;
 
   expander: mcp23sxx@0 {
     compatible = "microchip,mcp23sxx";
@@ -41,21 +41,21 @@
     };
   };
 
-  nice_view: ls0xx@2 {
-    compatible = "sharp,ls0xx";
-    label = "NICE_VIEW";
-    spi-max-frequency = <1000000>;
-    reg = <2>;
-    width = <160>;
-    height = <68>;
-  };
+//  nice_view: ls0xx@2 {
+//    compatible = "sharp,ls0xx";
+//    label = "NICE_VIEW";
+//    spi-max-frequency = <1000000>;
+//    reg = <2>;
+//    width = <160>;
+//    height = <68>;
+//  };
 };
 
-/ {
-    chosen {
-        zephyr,display = &nice_view;
-    };
-};
+/// {
+//    chosen {
+//        zephyr,display = &nice_view;
+//    };
+//};
 
 &xiao_i2c {
     status = "disabled";
